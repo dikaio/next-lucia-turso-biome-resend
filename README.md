@@ -3,7 +3,7 @@
 ## TODO
 
 - [x] Configure biome
-- [x] Configure shadcn
+- [x] Configure shadcn + geist
 - [x] Configure tailwind
 - [ ] Configure lucia
 - [ ] Configure turso
