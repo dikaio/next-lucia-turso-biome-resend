@@ -12,7 +12,10 @@
 - [x] Configure drizzle
 - [ ] Configure lucia
 - [ ] Modify lucia to use uuid4() for id field
-- [ ] Configure vercel ai
+- [ ] Configure password authentication
+- [ ] Configure passwordless authentication
+- [ ] Configure OAuth authentication with Google
+- [ ] Add ai features
 
 ### How to Use This Repository
 
