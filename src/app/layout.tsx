@@ -1,8 +1,8 @@
+import { cn } from "@/utils/helpers";
+import { GeistMono as geist_mono } from "geist/font/mono";
+import { GeistSans as geist_sans } from "geist/font/sans";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import "@/styles/tailwind.css";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -15,8 +15,12 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body className={inter.className}>{children}</body>
+		<html lang="en" suppressHydrationWarning>
+			<body
+				className={cn("min-h-screen", geist_sans.variable, geist_mono.variable)}
+			>
+				{children}
+			</body>
 		</html>
 	);
 }
