@@ -17,6 +17,10 @@
 - [ ] Configure OAuth authentication with Google
 - [ ] Add ai features
 
+## Considering
+
+- [ ] Database migration Atlas?
+
 ### How to Use This Repository
 
 This document assumes you have created an account at [Vercel](https://vercel.com), [Turso](https://turso.tech), and [Resend](https://resend.com). Follow these steps to get a working version of this starter.
