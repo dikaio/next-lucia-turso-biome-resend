@@ -9,4 +9,5 @@
 - [x] Configure resend
 - [x] Configure drizzle
 - [ ] Configure lucia
-- [ ] Modify Lucia to use uuid4() for id field
+- [ ] Modify lucia to use uuid4() for id field
+- [ ] Configure vercel ai
