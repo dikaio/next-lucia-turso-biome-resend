@@ -6,8 +6,6 @@ import { z } from "zod";
 import { userTable } from "./user";
 
 export const sessionTable = sqliteTable("session", {
-	// TODO: Lucia modifies the id field and is not using uuid4()
-	// for consistency, id would be ideal to have Lucia generate uuid4()
 	id: text("id").default(sql`(uuid4())`).notNull().primaryKey(),
 	userId: text("user_id")
 		.references(() => userTable.id, { onDelete: "cascade" })
@@ -21,13 +19,7 @@ export const insertSessionSchema = createInsertSchema(sessionTable, {
 	expiresAt: z
 		.number()
 		.positive()
-		.refine(
-			(value) => {
-				// Assuming expiresAt is a Unix timestamp and checking if it's in the future
-				return value > Date.now() / 1000;
-			},
-			{
-				message: "Expiration time must be in the future.",
-			},
-		),
+		.refine((value) => value > Math.floor(Date.now() / 1000), {
+			message: "Expiration time must be in the future.",
+		}),
 });

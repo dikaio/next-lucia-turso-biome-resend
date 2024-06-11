@@ -5,22 +5,15 @@
     {
       "idx": 0,
       "version": "6",
-      "when": 1718062110838,
-      "tag": "0000_fair_emma_frost",
+      "when": 1718092423017,
+      "tag": "0000_chemical_vance_astro",
       "breakpoints": true
     },
     {
       "idx": 1,
       "version": "6",
-      "when": 1718074833590,
-      "tag": "0001_regular_swordsman",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "6",
-      "when": 1718076248116,
-      "tag": "0002_many_whizzer",
+      "when": 1718093076747,
+      "tag": "0001_bouncy_master_chief",
       "breakpoints": true
     }
   ]
