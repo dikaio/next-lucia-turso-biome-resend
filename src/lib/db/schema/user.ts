@@ -27,19 +27,20 @@ export const userTable = sqliteTable(
 
 export const insertUserSchema = createInsertSchema(userTable, {
 	id: z.string().uuid(),
+	hashedPassword: z.string(),
 	role: z.enum(["GUEST", "CUSTOMER", "ADMIN", "SUPERADMIN"]).default("GUEST"),
 	firstName: z
 		.string()
 		.min(1)
 		.max(40)
-		.regex(/^[a-zA-Z-']+$/)
+		.regex(/^[\p{L} \p{M}'-]+$/u)
 		.trim()
 		.optional(),
 	lastName: z
 		.string()
 		.min(1)
 		.max(40)
-		.regex(/^[a-zA-Z-']+$/)
+		.regex(/^[\p{L} \p{M}'-]+$/u)
 		.trim()
 		.optional(),
 	email: z.string().email().toLowerCase().trim(),
