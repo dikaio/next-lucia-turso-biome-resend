@@ -14,8 +14,9 @@
 - [ ] Modify lucia to use uuid4() for id field
 - [ ] Configure password authentication
 - [ ] Configure passwordless authentication
-- [ ] Configure OAuth authentication with Google
-- [ ] Add ai features
+- [ ] Configure [Artic](https://arctic.js.org/) and [Oslo](https://oslo.js.org/)
+- [ ] Integrate AI
+- [ ] Add Zod
 
 ## Considering
 
@@ -30,6 +31,6 @@ This document assumes you have created an account at [Vercel](https://vercel.com
 3. `cp .env.example .env.local` and add environment variables.
 4. `pnpm install`
 5. `pnpm run db:generate`
-6. `pnpm run db:push`
+6. `pnpm run db:migrate`
 7. `pnpm run dev`
 8. Open your browser and navigate to `http://localhost:3000`
