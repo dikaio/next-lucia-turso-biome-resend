@@ -17,10 +17,14 @@
 - [ ] Configure [Artic](https://arctic.js.org/) and [Oslo](https://oslo.js.org/)
 - [ ] Integrate AI
 - [ ] Add Zod
+- [ ] Comment code
+- [ ] Add testing
+- [ ] Add CI/CD
 
 ## Considering
 
 - [ ] Database migration Atlas?
+- [ ] Payments with Stripe or LemonSqueezy
 
 ### How to Use This Repository
 
