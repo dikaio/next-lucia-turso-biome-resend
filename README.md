@@ -10,21 +10,17 @@
 - [x] Configure turso
 - [x] Configure resend
 - [x] Configure drizzle
+- [ ] Handle unique email error
 - [ ] Configure lucia
-- [ ] Modify lucia to use uuid4() for id field
+- [ ] Modify lucia to use uuid4()
 - [ ] Configure password authentication
 - [ ] Configure passwordless authentication
-- [ ] Configure [Artic](https://arctic.js.org/) and [Oslo](https://oslo.js.org/)
+- [ ] Configure OAuth [Artic](https://arctic.js.org/) and [Oslo](https://oslo.js.org/)
 - [ ] Integrate AI
 - [ ] Add Zod
 - [ ] Comment code
 - [ ] Add testing
 - [ ] Add CI/CD
-
-## Considering
-
-- [ ] Database migration Atlas?
-- [ ] Payments with Stripe or LemonSqueezy
 
 ### How to Use This Repository
 
