@@ -1,36 +1,6 @@
-import { sql } from "drizzle-orm";
-import { sqliteTable, text, uniqueIndex } from "drizzle-orm/sqlite-core";
+import { userTable } from "@/lib/db/schema/user";
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
-
-export const userTable = sqliteTable(
-	"user",
-	{
-		id: text("id").default(sql`(uuid4())`).notNull().primaryKey(),
-		hashedPassword: text("hashed_password").notNull(),
-		role: text("role", { enum: ["GUEST", "CUSTOMER", "ADMIN", "SUPERADMIN"] })
-			.default("GUEST")
-			.notNull(),
-		firstName: text("first_name", { length: 40 }),
-		lastName: text("last_name", { length: 40 }),
-		email: text("email").notNull().unique(),
-		phone: text("phone").unique(),
-		createdAt: text("created_at").default(sql`CURRENT_TIMESTAMP`).notNull(),
-		updatedAt: text("updated_at").default(sql`CURRENT_TIMESTAMP`).notNull(),
-	},
-	(table) => {
-		return {
-			emailIdx: uniqueIndex("email_idx").on(table.email),
-		};
-	},
-);
-
-export const SignInSchema = z.object({
-	email: z.string().min(2).max(50),
-	password: z
-		.string()
-		.min(8, { message: "Password must be at least 8 characters long" }),
-});
 
 export const SignUpSchema = z
 	.object({

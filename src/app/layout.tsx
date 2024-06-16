@@ -23,7 +23,13 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" suppressHydrationWarning className="h-full">
-			<body className={cn("h-full", geist_sans.variable, geist_mono.variable)}>
+			<body
+				className={cn(
+					"h-full bg-background text-foreground font-sans antialiased",
+					geist_sans.variable,
+					geist_mono.variable,
+				)}
+			>
 				<Providers
 					attribute="class"
 					defaultTheme="system"
@@ -31,8 +37,8 @@ export default function RootLayout({
 					disableTransitionOnChange
 				>
 					{children}
+					<Toaster />
 				</Providers>
-				<Toaster />
 			</body>
 		</html>
 	);

@@ -1,4 +1,3 @@
-import { sql } from "drizzle-orm";
 import { integer, sqliteTable, text } from "drizzle-orm/sqlite-core";
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
@@ -6,7 +5,7 @@ import { z } from "zod";
 import { userTable } from "./user";
 
 export const sessionTable = sqliteTable("session", {
-	id: text("id").default(sql`(uuid4())`).notNull().primaryKey(),
+	id: text("id").notNull().primaryKey(),
 	userId: text("user_id")
 		.references(() => userTable.id, { onDelete: "cascade" })
 		.notNull(),
@@ -14,7 +13,7 @@ export const sessionTable = sqliteTable("session", {
 });
 
 export const insertSessionSchema = createInsertSchema(sessionTable, {
-	id: z.string().uuid(),
+	id: z.string(),
 	userId: z.string().uuid(),
 	expiresAt: z
 		.number()

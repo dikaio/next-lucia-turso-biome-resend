@@ -1,4 +1,4 @@
-# Next.js + Lucia + Turso + Drizzle + Biome + Tailwind CSS + Typescript Starter
+# Next.js + Lucia + Turso + Drizzle + Biome + Tailwind CSS + Typescript Template
 
 **IMPORTANT** This starter is incomplete and not ready for production use. It is a work in progress, please use at your own risk.
 

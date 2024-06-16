@@ -15,6 +15,13 @@
       "when": 1718093076747,
       "tag": "0001_bouncy_master_chief",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1718139993845,
+      "tag": "0002_plain_tag",
+      "breakpoints": true
     }
   ]
 }
