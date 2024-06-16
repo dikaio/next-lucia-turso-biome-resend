@@ -11,13 +11,13 @@
 - [x] Configure resend
 - [x] Configure drizzle
 - [ ] Handle unique email error
-- [ ] Configure lucia
+- [x] Configure lucia
 - [ ] Modify lucia to use uuid4()
 - [ ] Configure password authentication
 - [ ] Configure passwordless authentication
 - [ ] Configure OAuth [Artic](https://arctic.js.org/) and [Oslo](https://oslo.js.org/)
 - [ ] Integrate AI
-- [ ] Add Zod
+- [x] Add Zod
 - [ ] Comment code
 - [ ] Add testing
 - [ ] Add CI/CD
