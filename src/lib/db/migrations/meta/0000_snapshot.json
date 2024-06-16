@@ -1,7 +1,7 @@
 {
   "version": "6",
   "dialect": "sqlite",
-  "id": "65cec671-8c20-432f-9d7e-73d3ca9352f6",
+  "id": "944fa5d4-3bba-4c26-98be-35d369a051c2",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "session": {
@@ -12,8 +12,7 @@
           "type": "text",
           "primaryKey": true,
           "notNull": true,
-          "autoincrement": false,
-          "default": "(uuid4())"
+          "autoincrement": false
         },
         "user_id": {
           "name": "user_id",
@@ -132,6 +131,13 @@
           "name": "user_phone_unique",
           "columns": [
             "phone"
+          ],
+          "isUnique": true
+        },
+        "email_idx": {
+          "name": "email_idx",
+          "columns": [
+            "email"
           ],
           "isUnique": true
         }

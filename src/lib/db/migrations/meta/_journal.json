@@ -5,22 +5,8 @@
     {
       "idx": 0,
       "version": "6",
-      "when": 1718092423017,
-      "tag": "0000_chemical_vance_astro",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "6",
-      "when": 1718093076747,
-      "tag": "0001_bouncy_master_chief",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "6",
-      "when": 1718139993845,
-      "tag": "0002_plain_tag",
+      "when": 1718500072664,
+      "tag": "0000_ancient_true_believers",
       "breakpoints": true
     }
   ]
